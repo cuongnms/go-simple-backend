@@ -16,7 +16,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	db := db.Debug()
+	db = db.Debug()
 
 	appCtx := common.NewAppCtx(db)
 	r := gin.Default()
